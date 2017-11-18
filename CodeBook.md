@@ -11,21 +11,26 @@ The cleaned and transformed data can be found in the file *tidy_data.txt*. It wa
 
 The observations are grouped by the performed activity and the subject ID:
 
-`activity`: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
-`subject`: 1 - 30
+* `activity`: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+* `subject`: 1 - 30
 
 Only the measurements on the mean (`mean`) and standard deviation (`std`) were included. The mean frequency and the additional vectors obtained by averaging the signals in a signal window sample are not part of the cleaned dataset. 
 
 The accelerometer (`acc`) and gyroscope (`gyro`) measurements are 3-axial (`XYZ`) and were divided into time domain signals (`t`) and frequency domain signals (`f`). The following variables were obtained for each direction and domain:
 
-`BodyAcc`: 
-`GravityAcc`:
-`BodyAccJerk`:
-`BodyGyro`:
-`BodyGyroJerk`:
-`BodyAccMag`:
-`GravityAccMag`:
-`
+* `BodyAcc`: 
+* `GravityAcc`: Only t?
+* `BodyAccJerk`:
+* `BodyGyro`:
+* `BodyGyroJerk`:
+
+Only mean and std:
+
+* `BodyAccMag`:
+* `GravityAccMag`:
+* `BodyAccJerkMag`:
+* `BodyGyroMag`:
+* `BodyGyroJerkMag`:
 
 
 
