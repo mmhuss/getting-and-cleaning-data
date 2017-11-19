@@ -16,23 +16,32 @@ The observations are grouped by the performed activity and the subject ID:
 
 Only the measurements on the mean (`mean`) and standard deviation (`std`) were included. The mean frequency and the additional vectors obtained by averaging the signals in a signal window sample are not part of the cleaned dataset. 
 
-The accelerometer (`acc`) and gyroscope (`gyro`) measurements are 3-axial (`XYZ`) and were divided into time domain signals (`t`) and frequency domain signals (`f`). The following variables were obtained for each direction and domain:
+The accelerometer (`acc`) and gyroscope (`gyro`) measurements are 3-axial (`XYZ`) and are available as time domain signals (`t`) and frequency domain signals (`f`). The acceleration signals were further divided into body (`Body`) and gravity (`Gravity`) acceleration signals.
+The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (`Jerk`) and the magnitude of these three-dimensional signals was calculated using the Euclidean norm (`Mag`).
 
-* `BodyAcc`: 
-* `GravityAcc`: Only t?
-* `BodyAccJerk`:
+The following variables were obtained for each direction (`XYZ`) and domain (`t` und `f`):
+
+* `BodyAcc`:
+* `BodyAccJerk:`
 * `BodyGyro`:
 * `BodyGyroJerk`:
 
-Only mean and std:
+Each direction, only time domain:
+
+* `GravityAcc`: 
+
+Both domains, no directions:
 
 * `BodyAccMag`:
-* `GravityAccMag`:
 * `BodyAccJerkMag`:
 * `BodyGyroMag`:
 * `BodyGyroJerkMag`:
 
+No directions, only time domain:
 
+* `GravityAccMag`:
+
+## Transformations
 
 
 
