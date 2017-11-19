@@ -3,6 +3,7 @@ This repo contains all scripts/files needed for the coursera getting and cleanin
 - run_analysis.R: The R code to create the tidy data sets asked for in the instructions
 - CodeBook.md: A description of all variables, data and data transformations performed
 - README.md: This readme, which explains how run_analysis.R works and which files are present
+- tidy_data.txt: The tidy dataset with the average of each variable for each activity and each subject
 
 In the script run_analysis.R, the following steps were performed:
 - 1: Read in all files needed to create the new dataset
