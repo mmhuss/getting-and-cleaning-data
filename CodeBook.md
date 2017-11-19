@@ -21,30 +21,37 @@ The body linear acceleration and angular velocity were derived in time to obtain
 
 The following variables were obtained for each direction (`XYZ`) and domain (`t` und `f`):
 
-* `BodyAcc`:
-* `BodyAccJerk:`
-* `BodyGyro`:
-* `BodyGyroJerk`:
+* `BodyAcc`
+* `BodyAccJerk`
+* `BodyGyro`
+* `BodyGyroJerk`
 
 Each direction, only time domain:
 
-* `GravityAcc`: 
+* `GravityAcc` 
 
 Both domains, no directions:
 
-* `BodyAccMag`:
-* `BodyAccJerkMag`:
-* `BodyGyroMag`:
-* `BodyGyroJerkMag`:
+* `BodyAccMag`
+* `BodyAccJerkMag`
+* `BodyGyroMag`
+* `BodyGyroJerkMag`
 
 No directions, only time domain:
 
-* `GravityAccMag`:
+* `GravityAccMag`
 
 ## Transformations
 
+The original data was transformed into the *tidy_data.txt* dataset following these steps:
+
+* The training and testing sets were merged with the corresponding y values and subject IDs and subsequently combined into one data set.
+* Only the measurements on the mean and standard deviation were extracted for each observation. The mean frequency and the vectors obtained by averaging the signals in a signal window sample were not included.
+* The activities in the data set were named using descriptive activity names.
+* The data sets was labeled with descriptive variable names. This only included reducing `mean()` and `std()` to `mean` and `std` respectively and changing `BodyBody` in some variables to `Body`.
+* The values in the dataset were obtained by averaging the measurements on the mean and standard deviation of the original dataset for each activity and each subject. This was done using the R *mean()* function.
 
 
-3) a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called CodeBook.md.
+  
 
-GitHub contains a code book that modifies and updates the available codebooks with the data to indicate all the variables and summaries calculated, along with units, and any other relevant information.
+
