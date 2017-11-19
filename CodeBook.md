@@ -9,6 +9,8 @@ The cleaned and transformed data can be found in the file *tidy_data.txt*. It wa
 
 ## Variables
 
+Note that the variables are normalized and bounded within [-1,1].
+
 The observations are grouped by the performed activity and the subject ID:
 
 * `activity`: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
@@ -18,8 +20,6 @@ Only the measurements on the mean (`mean`) and standard deviation (`std`) were i
 
 The accelerometer (`acc`) and gyroscope (`gyro`) measurements are 3-axial (`XYZ`) and are available as time domain signals (`t`) and frequency domain signals (`f`). The acceleration signals were further divided into body (`Body`) and gravity (`Gravity`) acceleration signals.
 The body linear acceleration and angular velocity were derived in time to obtain Jerk signals (`Jerk`) and the magnitude of these three-dimensional signals was calculated using the Euclidean norm (`Mag`).
-
-Note that the variables are normalized and bounded within [-1,1].
 
 The following variables were obtained for each direction (`XYZ`) and domain (`t` und `f`):
 
