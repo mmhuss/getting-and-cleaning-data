@@ -5,6 +5,9 @@ This repo contains all scripts/files needed for the coursera getting and cleanin
 - README.md: This readme, which explains how run_analysis.R works and which files are present
 - tidy_data.txt: The tidy dataset with the average of each variable for each activity and each subject
 
+Note: The tidy dataset can be read into R using the following code:
+`data <- read.table(file_path, header = TRUE)`
+
 In the script run_analysis.R, the following steps were performed:
 - 1: Read in all files needed to create the new dataset
 - 2: Merge the training and testing sets with the corresponding y values and subject IDs and combine both sets into one data set
